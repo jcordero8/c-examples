@@ -9,6 +9,7 @@ int main() {
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
+    funcion4(5);
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
@@ -33,8 +34,16 @@ void funcion2(int a, float b) {
 int funcion3(int x) {
     printf("En funcion3()...\n");
     int y = x + 2;
+    return y;  
+}
+// funcion4(): Imprime un mensaje. Retorna el valor que recibió como argumento
+// decremento en 2
+int funcion4(int x) {
+    printf("En funcion4()...\n");
+    int y = x - 2;
     return y;
 }
+
 
 int funcion5(int x) {
     printf("en funcion5");
